@@ -33,10 +33,10 @@ class TextAnalyzer
     arr2.each do |key, value|
       if value > biggest.value.first
         biggest = {}
-        biggest[key] = value 
+        biggest[key] = value
       end
-    end 
+    end
 
-    biggest 
+    biggest
   end
 end
