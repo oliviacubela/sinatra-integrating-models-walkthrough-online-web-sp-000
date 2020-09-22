@@ -9,3 +9,15 @@ class TextAnalyzer
     words = text.split(" ")
     words.count
   end
+
+  def count_of_vowels 
+    text.scan(/[aeiou]/).count 
+  end
+
+  def count_of_consonants
+    text.scan(/[bcdfghjklmnpqrstvwxyz]/).count
+  end
+  
+  def most_used_letter
+    s1 = text.gsub(/[^a-z]/, '')
+    arr = s1.split('')
